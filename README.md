@@ -35,6 +35,20 @@ PS1> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 En resumen el usuario actual que está en la sesión podrá invocar una sesión de PowerShell como administrador para hacer sus labores/trabajo/workflow/etc. y esto aplica en el host actual y si este usuario se mueve a otro host con su sesión de PowerShell mantendrá los permisos de procedencia, pero todos los demás usuarios, hosts y máquinas estarán con el perfil `undefined` y solo podrán usar PowerShell como usuario no administrador.
 
+## Ejecutando `install.ps1`
+
+Antes de que ejecutes el instalador primero desbloquea el script, yo aun no tengo llaves y/o firma para mis proyectos por lo que debes de desbloquear manualmente:
+
+```powershell
+PS1> Unblock-File .\install.ps1 && Set-ExecutionPolicy -ExecutionPolicy Bypass ".\install.ps1"
+```
+
+Ya desbloqueado el archivo y con el permiso hablitado de solo ejecutarse solo por esta ocacion, inicias el instalador:
+
+```powershell
+PS1> .\install.ps1
+```
+
 Credits:
 
 * For all the Themes/CoorSchemes on Windows Terminal and various plus terminals ![mbadolato](https://github.com/mbadolato/iTerm2-Color-Schemes)
