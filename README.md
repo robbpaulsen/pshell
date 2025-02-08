@@ -37,6 +37,7 @@ En resumen el usuario actual que está en la sesión podrá invocar una sesión 
 
 Credits:
 
-* For all the Themes/CoorSchemes on Windows Terminal and various plus terminals <https://github.com/mbadolato/iTerm2-Color-Schemes>
+* For all the Themes/CoorSchemes on Windows Terminal and various plus terminals ![mbadolato](https://github.com/mbadolato/iTerm2-Color-Schemes)
 * From WinUtil I managed to create my choco and winget installer function thanks to ![Chris Titus](https://github.com/ChrisTitusTech/winutil)
-
+* From ![fleschutz](https://github.com/fleschutz/PowerShell) it's from whom I've took more, and helps me to find
+other ways to write better spaghetti ps1 scripts =)
