@@ -1,0 +1,18 @@
+---
+Tag: [powershell, Install-Module, pwsh]
+---
+
+# Instalar un Modulo de PSGallery
+
+## Primero que nada hay que asegurar que el repositorio PSGallery este clasificado como "Seguro"
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
+# Prosigue con la instalacion del modulo de la PSGallery, que solo sea accesible para el usuario actual 
+# (Nota a menos que sepas que se puede jugar con el Scope, modificalo, de lo contrario mejor asi dejalo)
+Install-Module -Name <Nombre del Moduloe> -Repository PSGallery
+
+# Ejemplo 2 Forzando la instalacion
+Install-Module -Name <Nombre del Moduloe> -Repository PSGallery -Scope CurrentUser -Force
+
+# Ejemplo 3 Modificando el Scope de acceso por usuario
+Install-Module -Name <Nombre del Moduloe> -Repository PSGallery -Scope CurrentUser -Force

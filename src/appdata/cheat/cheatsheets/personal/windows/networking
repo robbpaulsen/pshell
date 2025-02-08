@@ -1,0 +1,51 @@
+---
+Tag: [powershell, pwsh, Get-NetAdapter, Get-NetRoute, Get-NetTCPConnection, Get-DnsClientCache, Test-Connection, REsoslve-DnsName, TNC]
+---
+
+# Obtener información
+
+## ipconfig /all equivalente gip es la abreviatura de Get-NetIPConfiguration.
+
+gip
+
+## Mostrar adaptadores de red
+
+Get-NetAdapter
+
+## Imprimir tabla de enrutamiento
+
+Get-NetAdapter [name] | Get-NetRoute [[-addressfamily ipv4]]
+
+## Mostrar conexiones de red activas
+
+Get-NetTCPConnection | ? State -eq Established | sort Localport | FT -Autosize
+
+## Mostrar caché DNS del cliente
+
+Get-DnsClientCache
+
+# Ejecutar pruebas
+
+## Equivalente de ping
+
+Test-Connection [computer]
+
+## Ping "continuo" (999999999 pings)
+
+Test-Connection [computer] -count 999999999
+
+## Traceroute TNC es la abreviatura de Test-NetConnection. -tr es la abreviatura de -TraceRoute.
+
+TNC [computer] -tr
+
+## Probar si un puerto remoto es accesible/abierto
+
+TNC [computer] -p [port]
+
+## Probar si un puerto remoto es accesible/abierto (más información)
+
+TNC [computer] -p [port] -inf detailed
+
+## Búsqueda de DNS
+
+Resolve-DnsName [computer]

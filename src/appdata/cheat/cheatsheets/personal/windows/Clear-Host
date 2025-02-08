@@ -1,0 +1,6 @@
+---
+Tag: [powershell, Clear-Host, pwsh]
+---
+
+# Limpiar la pantall de Consola en PowerShell
+Clear-Host

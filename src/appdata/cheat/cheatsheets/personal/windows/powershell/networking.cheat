@@ -1,0 +1,52 @@
+---
+syntax: powershell
+tags: [ powershell, windows ]
+---
+
+# Get information
+
+## ipconfig /all equivalent gip is short for Get-NetIPConfiguration.
+
+gip
+
+## Show network adapters
+
+Get-NetAdapter
+
+## Print routing table
+
+Get-NetAdapter [name] | Get-NetRoute [[-addressfamily ipv4]]
+
+## Show active network connections
+
+Get-NetTCPConnection | ? State -eq Established | sort Localport | FT -Autosize
+
+## Show client DNS cache
+
+Get-DnsClientCache
+
+# Run tests
+
+## Ping equivalent
+
+Test-Connection [computer]
+
+## "Continuous" ping (999999999 pings)
+
+Test-Connection [computer] -count 999999999
+
+## Traceroute TNC is short for Test-NetConnection. -tr is short for -TraceRoute.
+
+TNC [computer] -tr
+
+## Test if a remote port is reachable/open
+
+TNC [computer] -p [port]
+
+## Test if a remote port is reachable/open (more info)
+
+TNC [computer] -p [port] -inf detailed
+
+## DNS lookup
+
+Resolve-DnsName [computer]

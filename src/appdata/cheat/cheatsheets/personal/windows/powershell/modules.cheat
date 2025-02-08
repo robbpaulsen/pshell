@@ -1,0 +1,19 @@
+---
+syntax: powershell
+tags: [ powershell, modules ]
+---
+
+# Installing a PSGallery Module
+
+## First of all make sure that the PSGallery repository is classified as "Safe"
+Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
+
+## Proceed with the installation of the PSGallery module, so that it is only accessible to the current user
+## (Note unless you know that the scope can be played with, change it, otherwise leave it like that)
+Install-Module -Name <Module Name> -Repository PSGallery
+
+## Example 2 Forcing the installation
+Install-Module -Name <Module Name> -Repository PSGallery -Scope CurrentUser -Force
+
+## Example 3 Changing the scope of access per user
+Install-Module -Name <Module Name> -Repository PSGallery -Scope CurrentUser -Force

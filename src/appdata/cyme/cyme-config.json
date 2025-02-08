@@ -1,0 +1,111 @@
+{
+  "icons": {
+    "user": {
+      "classifier#02": "",
+      "classifier-sub-protocol#fe:01:01": "",
+      "name#.*^[sS][dD]\\s[cC]ard\\s[rR]eader.*": "",
+      "undefined-classifier": "☶",
+      "unknown-vendor": "",
+      "vid#05ac": "",
+      "vid#2e8a": "",
+      "vid-pid#1d50:6018": "",
+      "vid-pid-msb#0483:37": ""
+    },
+    "tree": {
+      "endpoint_in": "→",
+      "endpoint_out": "←",
+      "tree-blank": "   ",
+      "tree-bus-start": "●",
+      "tree-configuration-terminator": "•",
+      "tree-corner": "└──",
+      "tree-device-terminator": "○",
+      "tree-edge": "├──",
+      "tree-interface-terminator": "◦",
+      "tree-line": "│  "
+    }
+  },
+  "colours": {
+    "name": "bright blue",
+    "serial": "green",
+    "manufacturer": "blue",
+    "driver": "bright magenta",
+    "string": "blue",
+    "icon": null,
+    "location": "magenta",
+    "path": "bright cyan",
+    "number": "cyan",
+    "speed": "magenta",
+    "vid": "bright yellow",
+    "pid": "yellow",
+    "class_code": "bright yellow",
+    "sub_code": "yellow",
+    "protocol": "yellow",
+    "attributes": "magenta",
+    "power": "red",
+    "tree": "bright black",
+    "tree_bus_start": "bright black",
+    "tree_bus_terminator": "bright black",
+    "tree_configuration_terminator": "bright black",
+    "tree_interface_terminator": "bright black",
+    "tree_endpoint_in": "yellow",
+    "tree_endpoint_out": "magenta"
+  },
+  "blocks": [
+    "bus-number",
+    "device-number",
+    "icon",
+    "vendor-id",
+    "product-id",
+    "name",
+    "serial",
+    "driver",
+    "speed"
+  ],
+  "bus-blocks": [
+    "port-path",
+    "name",
+    "host-controller",
+    "host-controller-device"
+  ],
+  "config-blocks": [
+    "number",
+    "icon-attributes",
+    "max-power",
+    "name"
+  ],
+  "interface-blocks": [
+    "port-path",
+    "icon",
+    "alt-setting",
+    "base-class",
+    "sub-class",
+    "protocol",
+    "name",
+    "driver"
+  ],
+  "endpoint-blocks": [
+    "number",
+    "direction",
+    "transfer-type",
+    "sync-type",
+    "usage-type",
+    "max-packet-size"
+  ],
+  "mask-serials": null,
+  "max-variable-string-len": null,
+  "no-auto-width": false,
+  "lsusb": false,
+  "tree": false,
+  "verbose": 0,
+  "more": false,
+  "hide-buses": false,
+  "hide-hubs": false,
+  "list-root-hubs": false,
+  "decimal": false,
+  "no-padding": false,
+  "ascii": false,
+  "no-icons": false,
+  "headings": false,
+  "force-libusb": false,
+  "print-non-critical-profiler-stderr": false
+}

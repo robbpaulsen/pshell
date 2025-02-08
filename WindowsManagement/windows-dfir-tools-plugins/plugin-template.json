@@ -1,0 +1,10 @@
+[
+    {
+        "content_type": "<SHORT_NAME_FOR_YOUR_PLUGIN>",
+        "arg_long_name": "THE_REFERENCE_NAME_BY_WHICH_YOUR_PLUGIN_WILL_DECLARED",
+        "version": "0.0.1",
+        "help_message": "BRIEF EXPLANATION ABOUT IT'S FUNCTIONALITY",
+        "regex": "\b((^the\-regex\-that\.*will\-be_implemented)?)\b$",
+        "source_url": "https://github.com/username/project-of-plugin"
+    }
+]

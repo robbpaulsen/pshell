@@ -1,0 +1,49 @@
+[
+    {
+        "caption": "CFML: Settings",
+        "command": "cfml_edit_settings",
+        "args": {
+            "file": "${packages}/{cfml_package_name}/settings/cfml_package.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "CFML: Key Bindings",
+        "command": "cfml_edit_settings",
+        "args": {
+            "file": "${packages}/{cfml_package_name}/inputmaps/Default ($platform).sublime-keymap",
+            "default": "[\n\t$0\n]\n"
+        }
+    },
+    {
+        "caption": "CFML: Mouse Bindings",
+        "command": "cfml_edit_settings",
+        "args": {
+            "file": "${packages}/{cfml_package_name}/inputmaps/Default ($platform).sublime-mousemap",
+            "default": "[\n\t$0\n]\n"
+        }
+    },
+    {
+        "caption": "CFML: Format CFScript - Settings",
+        "command": "cfml_edit_settings",
+        "args": {
+            "file": "${packages}/{cfml_package_name}/settings/cfml_format.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "CFML: Format CFScript",
+        "command": "cfml_format",
+        "args": {
+            "current_method": false
+        }
+    },
+    {
+        "caption": "CFML: Index Active Project",
+        "command": "cfml_index_project"
+    },
+    {
+        "caption": "CFML: Toggle Color Scheme Styles",
+        "command": "cfml_color_scheme_styles"
+    }
+]

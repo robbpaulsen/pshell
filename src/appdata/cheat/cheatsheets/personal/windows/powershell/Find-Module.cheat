@@ -1,0 +1,18 @@
+---
+Tag: [powershell, Find-Module, pwsh]
+---
+
+# Busca un Modulo en linea con un nombre conocido
+Find-Module -Name <El nombre del Modulo> -Repository PSGallery
+
+# Busca un modulo en linea con un nombre parcial
+Find-Module -Repository PSGallery -Name *Manager*
+###### Al gregar los "*" estamos cubriendo cualquier nombre de modulo que pueda contener la palabra Manager en medio,
+###### Esto tambien incluira modulos que inicien con "Manager" y que finalicen con "Manager, importante saber que las
+###### busquedas con Find-Module siempre son `case-insensitive` asi que no importan las mayusculas o minusculas.
+
+# Ejemplo 2
+Find-Module -Repository PSGallery -Name Manager*
+
+# Ejemplo 3
+Find-Module -Repository PSGallery -Name *Manager

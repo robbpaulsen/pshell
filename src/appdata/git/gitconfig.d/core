@@ -1,0 +1,5 @@
+[core]
+  editor = code.cmd
+  autocrlf = input
+  pager = glow
+  ignorecase = false

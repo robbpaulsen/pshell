@@ -1,0 +1,71 @@
+---
+syntax: powershell
+tags: [ powershell, winget, windows ]
+---
+
+% winget, windows, powershell
+
+# Info
+
+## Get system info
+winget --info
+
+## Get winget version
+winget --version
+
+or
+
+winget -v
+
+## Install a package
+
+winget install <package>
+
+winget add <package>
+
+winget install --id <Package.Id>
+
+winget install --name <Package Name>
+
+
+## Install Specific Version of package
+
+winget install --id <Package.Id> --version 0.00.0
+
+winget install --name <Package Name> --version 0.00.0
+
+
+## Install Specific Version of package and uninstall previous old version
+
+winget install --id <Package.Id> --uninstall-previous --version 0.00.0
+
+winget install --name <Package Name> --uninstall-previous --version 0.00.0
+
+## Remove a package (Note: `remove` can also be used instead of `uninstall`)
+
+winget uninstall <package>
+
+winget remove <package>
+
+winget rm <package>
+
+
+
+# Display information about a package
+winget show <package>
+
+# Search for a package
+winget search <package>
+
+# Upgrade all packages to the latest versions
+winget upgrade --all
+
+# List all packages installed that can be managed with `winget`
+winget list --source winget
+
+# Import packages from a file, or export installed packages to a file
+winget <import|export> <--import-file|--output> <path_to_file>
+
+# Validate manifests before submitting a PR to the winget-pkgs repository
+winget validate <path_to_manifest>
+

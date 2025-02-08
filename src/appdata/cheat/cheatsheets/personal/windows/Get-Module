@@ -1,0 +1,6 @@
+ ---
+ tags: [ powershell, Get-Module ]
+ ---
+
+# Lista todos los modulos y en que directorio se encuentran
+Get-Module -ListAvailable

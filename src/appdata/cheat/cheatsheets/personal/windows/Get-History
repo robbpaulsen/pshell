@@ -1,0 +1,20 @@
+---
+Tag: [powershell, Get-History, pwsh, less, more]
+---
+
+# Revisar todo el Historial de PowerShell
+Get-History
+
+# Ejemplo 2 Revisar todo el Historial de PowerShell con mas detalles
+Get-History -Verbose
+
+# Ejemplo 3 Revisar todo el historial de PowerShell con detalles de un rango de entradas (Siempre inicia desde la mas reciente)
+Get-History -Verbose -Count 200
+
+###### Mostrara las ultimas 200 entradas del historial
+
+# Ejemplo 4 Revisar todo el historial de PowerShell usando un Pager para estaticamente analizar cada entrada
+Get-History -Verbose -Count 200 | less
+
+###### Aqui use el pager `less` pero si no se tiene instalado siempre se puede usar `more`
+Get-History -Verbose -Count 200 | more

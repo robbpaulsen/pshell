@@ -1,0 +1,30 @@
+[include]
+  path = gitconfig.d/core
+  path = gitconfig.d/alias
+  path = gitconfig.d/color
+  path = gitconfig.d/user
+
+[push]
+  default = upstream
+
+[init]
+  defaultBranch = main
+
+[safe]
+	directory = %(prefix)///wsl.localhost/Ubuntu-24.04/home/developer/Projects/wsl-chubuntu
+	directory = .\\md-notes
+	directory = C:/Users/developer/Projects/wsl-win
+	directory = C:/Users/developer/Projects/pshell
+	directory = C:/Users/developer/Documents/lollms_personal/apps_zoo_repo
+	directory = P:/self-hosted-ai/lollms_webui/lollms-webui
+	directory = P:\\self-hosted-ai\\lollms_webui\\lollms-webui
+	directory = O:/developer/Documents/repos/tookie-osint
+
+[credential "https://huggingface.co"]
+	provider = generic
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
